@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Documento sin t&iacute;tulo</title>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+//-->
+</script>
+<link href="../css/cestil.css" rel="stylesheet" type="text/css" />
+<link href="../css/sss.css" rel="stylesheet" type="text/css" />
+<link href="../js/j.js" rel="stylesheet" type="text/css" />
+</head>
+
+<body >
+
+<form id="form1" name="form1" method="post" action="">
+  <label>principal
+  <select name="select">
+    <option>casa</option>
+    <option>carro</option>
+  </select>
+  <select name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+    <option value="../a.blend">casa</option>
+    <option>carro</option>
+    <option>unnamed1</option>
+  </select>
+  </label>
+</form>
+<form name="form2" id="form2">
+  <select name="menu2" onchange="MM_jumpMenu('parent',this,0)">
+    <option selected="selected">ejemplomenu</option>
+  </select>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<nav id="side-nav">
+  <a id="logo" href="#">
+    <i class="fa fa-codepen"></i></a>
+  <ul>
+    <li>
+      <a href="#">
+        <i class="fa fa-code"></i>
+        <span>Pen</span></a>
+      	<ul>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Picks</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Recent</a></li>
+      	</ul>
+    </li>
+    <li class="selected">
+      <a href="#">
+        <i class="fa fa-comment-o"></i>
+        <span>Comment</span></a>
+        <ul>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Recent</a></li>
+   	  </ul>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-heart-o"></i>
+        <span>Heart</span></a>    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-paper-plane-o"></i>
+        <span>Share</span></a>    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-star-o"></i>
+        <span>Favorite</span></a>    </li>
+  </ul>
+  <a id="toggle">
+    <i class="fa fa-chevron-circle-left"></i></a></nav>
+	<script src="./j.js"></script>
+</body>
+</html>
